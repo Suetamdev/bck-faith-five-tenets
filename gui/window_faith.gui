@@ -1207,7 +1207,7 @@ window = {
 						margin_top = 10
 
 						datamodel = "[FaithWindow.GetCoreTenetItems]"
-						wrap_count = 4
+						wrap_count = 5
 
 						item = {
 							flowcontainer = {
@@ -1231,7 +1231,7 @@ window = {
 							using = Background_Area
 							margin = { 40 0 }
 							margin_top = -40
-							margin_bottom = -80
+							margin_bottom = -40
 
 							modify_texture = {
 								texture = "gfx/interface/component_masks/mask_fade_horizontal_short.dds"
@@ -1254,7 +1254,7 @@ window = {
 						spacing = 10
 
 						datamodel = "[FaithWindow.GetCoreTenetItems]"
-						wrap_count = 4
+						wrap_count = 5
 
 						item = {
 							flowcontainer = {
@@ -2308,7 +2308,7 @@ types FaithWindow
 	}
 
 	type widget_tenet_item = widget {
-		size = { 104 160 }
+		size = { 84.5 130 }
 		allow_outside = yes
 
 		block "tenet_enabled" {
@@ -2324,7 +2324,7 @@ types FaithWindow
 
 		highlight_icon = {
 			name = "doctrine_group_bg"
-			size = { 104 160 }
+			size = { 84.5 130 }
 			texture = "[Faith.GetTenetBackgroundIcon( Rite.Self, TenetType.Self )]"
 		}
 
@@ -2332,7 +2332,7 @@ types FaithWindow
 		{
 			widget = {
 				position = { 0 -10 }
-				size = { 104 160 }
+				size = { 84.5 130 }
 				allow_outside = yes
 				alwaystransparent = yes
 				visible = "[TenetType.IsValid]"
@@ -2342,7 +2342,7 @@ types FaithWindow
 					widgetanchor = center
 					parentanchor = center
 
-					size = { 104 160 }
+					size = { 84.5 130 }
 					texture = "[TenetItem.GetIcon]"
 					alpha = 0.85
 				}
@@ -2355,8 +2355,8 @@ types FaithWindow
 				name = "doctrine_group_icon"
 				visible = "[Not( TenetType.IsValid )]"
 
-				position = { 22 50 }
-				size = { 60 60 }
+				position = { 18 40 }
+				size = { 50 50 }
 			}
 		}
 
@@ -2368,12 +2368,12 @@ types FaithWindow
 
 			expand = {}
 
-			text_label_center = {
+			text_single = {
 				name = "tenet_name"
 				layoutpolicy_horizontal = expanding
-				maximumsize = { 104 44 }
+				maximumsize = { 84.5 33 }
 				visible = "[TenetType.IsValid]"
-				fontsize_min = 10
+				fontsize_min = 8
 				multiline = yes
 				align = center
 				elide = right
@@ -2381,7 +2381,7 @@ types FaithWindow
 					text = "[TenetType.GetNameNoTooltip( Rite.Self )]"
 				}
 				default_format = "#high"
-
+				
 				using = Font_Size_Medium
 			}
 		}
@@ -2758,10 +2758,10 @@ types FaithWindow
 				layoutpolicy_horizontal = expanding
 				layoutpolicy_vertical = expanding
 
-				addcolumn = 150
-				addrow = 220
+				addcolumn = 120
+				addrow = 160
 
-				datamodel_wrap = 4
+				datamodel_wrap = 5
 				flipdirection = yes
 
 				datamodel = "[TenetGroupItem.GetTenets]"
@@ -2792,7 +2792,7 @@ types FaithWindow
 				addcolumn = 205
 				addrow = 82
 
-				datamodel_wrap = 4
+				datamodel_wrap = 5
 				flipdirection = yes
 
 				datamodel = "[TenetGroupItem.GetTenets]"

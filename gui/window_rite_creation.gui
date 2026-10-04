@@ -198,7 +198,7 @@ window = {
 									onclick = "[GetVariableSystem.Set( 'faith_creation_right_view', 'tenet_selection' )]"
 
 									icon = {
-										size = { 104 120 }
+										size = { 84.5 100 }
 										scale = 1.5
 										parentanchor = center
 										visible = "[EqualTo_int32( TenetItem.GetSlotIndex, RiteCreationWindow.GetDoctrineCategoryWindow.GetSlotIndex ) ]"
@@ -1457,10 +1457,10 @@ types RiteCreationWindow
 				layoutpolicy_horizontal = expanding
 				layoutpolicy_vertical = expanding
 
-				addcolumn = 165
-				addrow = 220
+				addcolumn = 120
+				addrow = 160
 
-				datamodel_wrap = 3
+				datamodel_wrap = 4
 				flipdirection = yes
 
 				datamodel = "[TenetGroupItem.GetTenets]"
@@ -1478,7 +1478,7 @@ types RiteCreationWindow
 						down = "[RiteCreationWindow.HasTenetSelected( TenetType.Self )]"
 
 						icon = {
-							size = { 104 120 }
+							size = { 84.5 100 }
 							scale = 1.5
 							parentanchor = center
 							visible = "[EqualTo_int32( TenetItem.GetSlotIndex, RiteCreationWindow.GetDoctrineCategoryWindow.GetSlotIndex ) ]"
