@@ -1,3 +1,7 @@
 ﻿NReligion = {
 	FAITH_CORE_TENETS_CAP = 5
 }
+
+NFaith = {
+	MAX_VIRTUES_SINS = 10
+}
